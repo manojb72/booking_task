@@ -7,4 +7,9 @@ Running the code above in the console will return chunks of 45 min intervals fro
 starting from 10 till 19
 
 1. Extend the code to support configurable different opening hours for per staff member
+
+
 2. Allow support for different hours in the weekend
+
+
+staff = StaffMember.new({start_work_hour: '13:00',end_work_hour: '16:00',weekend_start: '13:00',weekend_end: '16:00'})
