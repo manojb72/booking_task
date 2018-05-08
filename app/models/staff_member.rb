@@ -1,5 +1,7 @@
 class StaffMember
   include ActiveModel::Model
+  attr_accessor :start_work_hour__c
+  attr_accessor :end_work_hour__c
   def events; {} end
   def timezone; Time.find_zone("PST8PDT") end
   def start_hour; self.try(:start_work_hour__c) || '10:00' end
